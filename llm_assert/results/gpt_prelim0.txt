@@ -1,0 +1,238 @@
+--FILENAME--
+c13.cpp
+--TRUTH--
+    assert(num2 == -num1);
+
+--OUTPUT--
+
+assert(num2 == abs(num1));
+--FILENAME--
+c5.c
+--TRUTH--
+    assert(number2);
+
+--OUTPUT--
+
+assert(number2 == true);
+--FILENAME--
+c6.c
+--TRUTH--
+    assert(number2 == 0);
+
+--OUTPUT--
+
+#include <stdio.h>
+#include <assert.h>
+
+int main() {
+
+    int number1;
+    int number2;
+
+    number1 = 5;
+    number2 = 0;
+
+    if (number1 < 0) {
+        number2 = number2 + 1;
+    }
+
+    assert(number2 == 0);
+--FILENAME--
+c1.c
+--TRUTH--
+    sum = number1 + number2;
+    assert(sum == 0);
+
+--OUTPUT--
+
+assert(number1 + number2 == 0);
+--FILENAME--
+c7.c
+--TRUTH--
+    assert(c == (a+b)/2);
+
+--OUTPUT--
+
+#include <stdio.h>
+#include <assert.h>
+
+int main() {
+    int a, b, c;
+    
+    printf("Enter numbers: ");
+    scanf("%d %d", &a, &b);
+
+    c = (a + b) / 2;
+    
+    assert(c == (a + b) / 2);
+--FILENAME--
+c18.c
+--TRUTH--
+    assert(strcmp(s1,s2) == 0);
+
+--OUTPUT--
+
+assert(strcmp(s1, s2) == 0);
+--FILENAME--
+c4.c
+--TRUTH--
+    assert(number2 > number1);
+
+--OUTPUT--
+
+assert(number2 > number1);
+--FILENAME--
+c9.c
+--TRUTH--
+    int sum = number1 + number2;
+    assert(sum % 2 == 1);
+
+--OUTPUT--
+
+assert((number1 + number2) % 2 != 0);
+--FILENAME--
+c12.cpp
+--TRUTH--
+    assert(num1 % num2 == 0);
+
+--OUTPUT--
+
+assert(num1 % num2 == 0);
+--FILENAME--
+c14.cpp
+--TRUTH--
+    assert(num2 == -10);
+
+--OUTPUT--
+
+assert(num2 == -10);
+--FILENAME--
+c3.c
+--TRUTH--
+    assert(c == a+b);
+
+--OUTPUT--
+
+To assert that `c` is equal to the sum of `a` and `b`, you can use the following assert statement:
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+int main() {    
+    int a, b, c;
+    
+    printf("Enter numbers: ");
+    scanf("%d %d", &a, &b);
+
+    c = a + b;
+    
+    assert(c == a + b);
+--FILENAME--
+list2.c
+--TRUTH--
+	int sum = 0;
+	for(int i = 1; i <= N; i++){
+		sum += i;
+	}
+	assert(sum == N*(N+1)/2);
+
+--OUTPUT--
+
+To assert that the sum of numbers from 1 to N is equal to N*(N+1)/2, you can add a for loop to calculate the sum and compare it with the expected value using an assertion statement. Here's an example:
+
+```c
+#include <stdio.h>
+#include <assert.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+    printf("Sum of 1 to %d is %d\n", N, N*(N+1)/2);
+
+    int sum = 0;
+    for (int i = 1; i <= N; i++) {
+        sum += i;
+    }
+
+    assert(sum == N*(N+1)/2);
+--FILENAME--
+c10.cpp
+--TRUTH--
+    assert(maxNumber <= num1 || maxNumber <= num2);
+
+--OUTPUT--
+
+assert(maxNumber <= num1 && maxNumber <= num2);
+--FILENAME--
+c11.cpp
+--TRUTH--
+    assert(ans == num1);
+
+--OUTPUT--
+
+assert(ans == num1);
+--FILENAME--
+list1.c
+--TRUTH--
+	for(int i = 0; i < LIST_LEN; i++){
+		assert(arr[i] >= 0);
+
+--OUTPUT--
+
+#include <assert.h>
+
+// assert statements that all elements of arr are greater than or equal to 0
+for(int i = 0; i < LIST_LEN; i++){
+	assert(arr[i] >= 0);
+--FILENAME--
+c17.cpp
+--TRUTH--
+    assert(s3.length() == s1.length() + s2.length());
+
+--OUTPUT--
+
+assert(s3.length() == s1.length() + s2.length());
+--FILENAME--
+c2.c
+--TRUTH--
+    prod = number1 * number2;
+    assert(prod < 0);
+
+--OUTPUT--
+
+assert(number1 * number2 < 0);
+--FILENAME--
+c16.cpp
+--TRUTH--
+    assert(sum == 10);
+
+--OUTPUT--
+
+assert(sum == 10);
+--FILENAME--
+c8.c
+--TRUTH--
+    assert(number1 % 2 == 0);
+
+--OUTPUT--
+
+To assert that `number1` is even in your code, you can use the following assert statement:
+
+```c
+#include <assert.h>
+
+int main() {
+    int number1;
+    
+    number1 = 8;
+    
+    assert(number1 % 2 == 0);
+--FILENAME--
+c15.cpp
+--TRUTH--
+    assert(sum == (num1+1)*num1/2);
+
+--OUTPUT--
+
+assert(sum == 55);

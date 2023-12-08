@@ -1,0 +1,91 @@
+--FILENAME--
+c5.c
+--TRUTH--
+    assert(number2);
+
+--OUTPUT--
+    assert(number2);
+--FILENAME--
+c6.c
+--TRUTH--
+    assert(number2 == 0);
+
+--OUTPUT--
+    assert(number2 == 0);
+--FILENAME--
+c1.c
+--TRUTH--
+    sum = number1 + number2;
+    assert(sum == 0);
+
+--OUTPUT--
+    assert(sum == 0);
+--FILENAME--
+c7.c
+--TRUTH--
+    assert(c == (a+b)/2);
+
+--OUTPUT--
+    assert(c == (a+b)/2);
+--FILENAME--
+c4.c
+--TRUTH--
+    assert(number2 > number1);
+
+--OUTPUT--
+    assert(number2 > number1);
+--FILENAME--
+c9.c
+--TRUTH--
+    int sum = number1 + number2;
+    assert(sum % 2 == 1);
+
+--OUTPUT--
+    assert((number1 + number2) % 2 == 1); // true if the condition is met
+--FILENAME--
+c12.cpp
+--TRUTH--
+    assert(num1 % num2 == 0);
+
+--OUTPUT--
+    assert(num1%num2 == 0);
+--FILENAME--
+c3.c
+--TRUTH--
+    assert(c == a+b);
+
+--OUTPUT--
+    assert(c == (a + b));
+--FILENAME--
+c10.cpp
+--TRUTH--
+    assert(maxNumber <= num1 || maxNumber <= num2);
+
+--OUTPUT--
+    assert (maxNumber <= num1 && maxNumber <= num2 );
+
+    cout << "The maximum between " << num1
+         << " and "
+--FILENAME--
+c11.cpp
+--TRUTH--
+    assert(ans == num1);
+
+--OUTPUT--
+    assert (ans == num1);
+}
+--FILENAME--
+c2.c
+--TRUTH--
+    prod = number1 * number2;
+    assert(prod < 0);
+
+--OUTPUT--
+    assert(prod < 0);
+--FILENAME--
+c8.c
+--TRUTH--
+    assert(number1 % 2 == 0);
+
+--OUTPUT--
+    assert((number1 % 2) == 0);

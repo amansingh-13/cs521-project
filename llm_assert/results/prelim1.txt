@@ -1,0 +1,163 @@
+--FILENAME--
+c13.cpp
+--TRUTH--
+    assert(num2 == -num1);
+
+--OUTPUT--
+    if (num2 != 2000) cout << "Number Error!" << endl;
+
+    vector<int> v1{}, v2{};
+    
+    v1.push_back(5);
+
+--FILENAME--
+c5.c
+--TRUTH--
+    assert(number2);
+
+--OUTPUT--
+    assert(number2);
+--FILENAME--
+c6.c
+--TRUTH--
+    assert(number2 == 0);
+
+--OUTPUT--
+    assert(number2 == 0);
+--FILENAME--
+c1.c
+--TRUTH--
+    sum = number1 + number2;
+    assert(sum == 0);
+
+--OUTPUT--
+    assert(sum == 0);
+--FILENAME--
+c7.c
+--TRUTH--
+    assert(c == (a+b)/2);
+
+--OUTPUT--
+    assert(c == (a+b)/2);
+--FILENAME--
+c4.c
+--TRUTH--
+    assert(number2 > number1);
+
+--OUTPUT--
+    assert(number2 > number1);
+--FILENAME--
+c9.c
+--TRUTH--
+    int sum = number1 + number2;
+    assert(sum % 2 == 1);
+
+--OUTPUT--
+    assert((number1 + number2) % 2 == 1); // true if the condition is met
+--FILENAME--
+c12.cpp
+--TRUTH--
+    assert(num1 % num2 == 0);
+
+--OUTPUT--
+    assert((num1%num2) == 0);
+--FILENAME--
+c14.cpp
+--TRUTH--
+    assert(num2 == -10);
+
+--OUTPUT--
+    cout << "The absolute value of " << num1 <<
+--FILENAME--
+c3.c
+--TRUTH--
+    assert(c == a+b);
+
+--OUTPUT--
+    assert(c == (a + b));
+--FILENAME--
+c18.cpp
+--TRUTH--
+    assert(s1.equals(s2));
+
+--OUTPUT--
+    if(s1 == s2) {
+        cout << "[pass] test_string_literals" << endl;
+        return 0;
+--FILENAME--
+list2.c
+--TRUTH--
+	int sum = 0;
+	for(int i = 1; i <= N; i++){
+		sum += i;
+	}
+	assert(sum == N*(N+1)/2);
+
+--OUTPUT--
+	assert(N*(N+1)/2 == 2365487);
+--FILENAME--
+c10.cpp
+--TRUTH--
+    assert(maxNumber <= num1 || maxNumber <= num2);
+
+--OUTPUT--
+    assert (maxNumber <= num1 && maxNumber <= num2 );
+
+    cout << "The maximum between " << num1
+         << " and "
+--FILENAME--
+c11.cpp
+--TRUTH--
+    assert(ans == num1);
+
+--OUTPUT--
+    assert (ans == num1);
+}
+--FILENAME--
+list1.c
+--TRUTH--
+	for(int i = 0; i < LIST_LEN; i++){
+		assert(arr[i] >= 0);
+
+--OUTPUT--
+	for(int i = 0; i < LIST_LEN; i++){
+	
+--FILENAME--
+c17.cpp
+--TRUTH--
+    string s3 = s1 + s2;
+    assert(s3.length() == s1.length() + s2.length());
+
+--OUTPUT--
+    cout << "length of string after concatenating string 1 and string 2" << ' ' << s1.size() + s2.size() << endl;
+--FILENAME--
+c2.c
+--TRUTH--
+    prod = number1 * number2;
+    assert(prod < 0);
+
+--OUTPUT--
+    assert(prod < 0);
+--FILENAME--
+c16.cpp
+--TRUTH--
+    assert(sum == 10);
+
+--OUTPUT--
+    cout << "sum: " << sum << endl;
+--FILENAME--
+c8.c
+--TRUTH--
+    assert(number1 % 2 == 0);
+
+--OUTPUT--
+    assert((number1 % 2) == 0);
+--FILENAME--
+c15.cpp
+--TRUTH--
+    assert(sum == (num1+1)*num1/2);
+
+--OUTPUT--
+    if (sum == 55) {
+        cout << "Correct sum." << endl;
+    } else {
